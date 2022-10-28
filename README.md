@@ -11,7 +11,7 @@ New
 It does not return the correct code_tate when executing a POST method
 
 ### Summary: 
-Executing a POST method on this URL is expected to return a 500 error code.The POST method is not allowed because it is a URL that only supports the GET method. This returns a recaptchat link.
+Executing a POST method on this URL is expected to return a 500 error code.The POST method is not allowed because it is a URL that only supports the GET method. This returns a Recaptcha link.
 
 ### Data:
 URL: https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=ovmhLiigaw4D9ujHYlHcKKhP
@@ -28,8 +28,7 @@ URL: https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=ovmhLiigaw4D9ujH
        Status Code = 405 Method Not Allowed
        
 ### Defect Environment:
-Production enviroment
-API version: 
+Production environment API version: 
 * Postman version v10
 * Consult REDME.md file for configuration and versions of Python scripts
 
@@ -70,7 +69,7 @@ URL: https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=ovmhLiigaw4D9ujH
        Does NOT return the expected message in any of the elements
        
 ### Defect Environment:
-Production enviroment
+Production environment API version:
 API version: 
 * Postman version v10
 * Consult REDME.md file for configuration and versions of Python scripts
@@ -94,7 +93,7 @@ New
 "isUtilizingAdvertiser1pEnabled" key is not returning the expected value
 
 ### Summary: 
-When executing a GET method to obtain a certain value for the key "isUtilizingAdvertiser1pEnabled" within the json, it returns an unexpected value
+When executing a GET method to obtain a specific value for the key "isUtilizingAdvertiser1pEnabled" within the JSON, it returns an unexpected value
 
 ### Data:
 URL: https://ct.pinterest.com/user/?event=search&ed=%7B%22np%22%3A%22gtm%22%7D&tid={today_date.timestamp()}&cb={next_date.timestamp()
@@ -102,7 +101,7 @@ URL: https://ct.pinterest.com/user/?event=search&ed=%7B%22np%22%3A%22gtm%22%7D&t
 ### Reproduction Steps:
 1. Start the client to run API tests (Postman/PythonScripts).
 2. Invoke the REST API call using the GET method
-3. Verify in the json that the API responds the value of the key "isUtilizingAdvertiser1pEnabled"
+3. Verify in the JSON that the API responds the value to the key "isUtilizingAdvertiser1pEnabled"
 
 ### Expected Result:
       The expected value for the key "isUtilizingAdvertiser1pEnabled" is FALSE
@@ -111,8 +110,7 @@ URL: https://ct.pinterest.com/user/?event=search&ed=%7B%22np%22%3A%22gtm%22%7D&t
        The value returned by the key "isUtilizingAdvertiser1pEnabled" is TRUE
        
 ### Defect Environment:
-Production enviroment
-API version: 
+Production environment API version:
 * Postman version v10
 * Consult REDME.md file for configuration and versions of Python scripts
 
